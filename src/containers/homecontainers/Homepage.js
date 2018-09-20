@@ -1,8 +1,4 @@
 import React from 'react';
-import Header from './Header';
-import Login from './Login';
-import Register from './Register';
-import Reset from './Reset';
 
 const Main = (routeChange) => {
 	switch(routeChange){
