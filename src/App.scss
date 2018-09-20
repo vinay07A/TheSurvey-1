@@ -1,1 +1,44 @@
+// $primary:       $blue !default;
+// $secondary:     $gray-600 !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         
+// $dark:          $gray-800 !default;
+
+.jumbotron{
+	height: 70vh!important;
+}
+
+.navbar-brand {
+	cursor: pointer!important;
+}
+
+.login-register-button {
+	flex: inherit!important;
+}
+.btn-outline-green {
+	border-radius: 0!important;
+}
+
+.btn-outline-green:hover {
+	color: white!important;
+}
+
+.btn-outline-navy:hover {
+	color: #69e781!important;
+}
+
+$theme-colors: (
+  "navy": #0b2239, //navy
+  "green" : #69e781, //green
+  "wthie" : white
+);
+
+$font-family-base: 'Lato';
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
 @import "../node_modules/bootstrap/scss/bootstrap";

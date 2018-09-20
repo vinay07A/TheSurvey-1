@@ -8,16 +8,16 @@ constructor() {
     this.state = {
     	route : 'homepage',
     }
+    this.routeChange = this.routeChange.bind(this);
   }
-
 
 routeChange = (route) => {
 	this.setState({route});
   }
 
 render() {
-  	if (this.state.route === 'homepage') {
-  		return <Homepage routeChange = {this.routeChange} route={this.state.route}/>
+  	if (this.state.route !== 'survey') {
+  		return <Homepage routeChange={this.routeChange} route={this.state.route}/>
   	} else if (this.state.route === 'survey') {
   		return <Survey />
   	}
