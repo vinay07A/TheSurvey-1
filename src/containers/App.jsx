@@ -16,11 +16,11 @@ routeChange = (route) => {
   }
 
 render() {
-	if (this.state.route === 'homepage') {
-		return <Homepage routeChange = {this.routeChange}/>
-	} else if (this.state.route === 'survey') {
-		return <Survey />
-	}
+  	if (this.state.route === 'homepage') {
+  		return <Homepage routeChange = {this.routeChange} route={this.state.route}/>
+  	} else if (this.state.route === 'survey') {
+  		return <Survey />
+  	}
   }
 }
 

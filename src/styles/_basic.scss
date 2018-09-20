@@ -1,15 +1,8 @@
-$brand_color: aqua;
-$secondary_color: red;
-
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
-  background-color: $brand_color;
 }
 
 div {

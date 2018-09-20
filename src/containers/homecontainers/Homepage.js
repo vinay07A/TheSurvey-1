@@ -1,27 +1,32 @@
 import React from 'react';
+import Header from './Header';
+import Main from './Main';
+import Login from './Login';
+import Register from './Register';
+import Reset from './Reset';
 
-const Main = (routeChange) => {
-	switch(routeChange){
+const HomepageView = (routeChange, route) => {
+	switch(route){
 		case "homepage":
-			return <Main />
+			return <Main routeChange={routeChange}/>
 		case "login":
-			return <Login />
+			return <Login routeChange={routeChange}/>
 		case "register" :
-			return <Register />
+			return <Register routeChange={routeChange}/>
 		case "reset" :
-			return <Reset />
+			return <Reset routeChange={routeChange}/>
 		default:
 			return <p>Sorry. Wrong route</p>
 	}
 }
 
 
-const Homepage = ({routeChange}) => {
+const Homepage = ({routeChange, route}) => {
 	return (
 		<div>
 			<Header />
 			{
-				Main(routeChange);
+				HomepageView(routeChange, route)
 			}
 		</div>
 		);
