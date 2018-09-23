@@ -1,11 +1,39 @@
-// $primary:       $blue !default;
-// $secondary:     $gray-600 !default;
-// $success:       $green !default;
-// $info:          $cyan !default;
-// $warning:       $yellow !default;
-// $danger:        $red !default;
-// $light:         
-// $dark:          $gray-800 !default;
+@media only screen and (max-width: 576px) {
+    .rocket_img_class {
+        display:none!important;
+    }
+} 
+
+@media only screen and (max-width: 505px) {
+    .navbar-brand{
+        margin:0!important;
+        font-size:1rem!important;
+    }
+    .nav_custom{
+        margin-right:0!important;
+        margin-left:0!important;
+    }
+    .navbar-toggler{
+        display:none;
+    }
+} 
+
+@media only screen and (min-width: 505.1px) {
+    .navbar-brand{
+        margin-left:3rem!important;
+    }
+    .nav_custom{
+        margin-right:2rem!important;
+    }
+
+} 
+
+.reset{
+    cursor: pointer;
+}
+.reset:hover{
+    color: blue;
+}
 
 .jumbotron{
 	height: 70vh!important;

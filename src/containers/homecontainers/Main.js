@@ -1,20 +1,16 @@
 import React from 'react';
 import rocket from './img/project.png';
 
-const rocket_img = {
-  height: "50%"
-}
-
-const Main = ({routeChange}) => {
-
+const Main = ({routeChange, openNav, closeNav}) => {
   return (
     <div>
-      <div> 
-        <nav className="navbar navbar-expand-lg navbar-navy bg-navy text-white">
-          <a className="navbar-brand ml-5">Survey<span className='text-green'>Rocket</span>  <i className="fas fa-rocket text-green"></i></a>
+      <div>  
+      <nav className="navbar navbar-expand-lg navbar-navy bg-navy text-white">
+          <a className="navbar-brand">Survey<span className='text-green'>Rocket</span>  <i className="fas fa-rocket text-green"></i></a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
+
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
@@ -27,51 +23,58 @@ const Main = ({routeChange}) => {
                 <a className="nav-link">Pricing</a>
               </li>
             </ul>
-            <span className="navbar-text mr-2">
-              <button className="btn btn-outline-navy text-white" type="button" onClick={()=>routeChange("login")}>Log in</button>
+          </div>
+          <div className="nav_div_custom">
+            <span className="navbar-text">
+              <button className="nav_custom btn btn-outline-navy text-white" type="button" onClick={()=>routeChange("login")}>Log in</button>
             </span>
-            <span className="navbar-text mr-5">
-              <button className="btn btn-outline-green" type="button" onClick={()=>routeChange("signup")}>Sign up</button>
+            <span className="navbar-text">
+              <button className="nav_custom btn btn-outline-green" type="button" onClick={()=>routeChange("signup")}>Sign up</button>
             </span>
           </div>
+          
         </nav>
+
       </div>
 
       <div className="jumbotron jumbotron-fluid">
 
             <div className="container text-center">
             <div className="row text-center">
-                <div className="col-lg-6 col-sm-12 text-center">
+                <div className="col-lg-6 col-sm-6 text-center">
                   <h1 className="mb-5">Launch your survey</h1> 
-                    <div class="d-flex">
-                      <div class="p-2">
-                        <i class="fas fa-rocket fa-2x"></i>
+                    <div className="d-flex">
+                      <div className="p-2">
+                        <i className="fas fa-rocket fa-2x"></i>
                       </div>
-                      <div class="p-2">
+                      <div className="p-2">
                         Feature-rich platform
                       </div>
                     </div>
 
-                    <div class="d-flex">
-                      <div class="p-2">
-                        <i class="fas fa-rocket fa-2x"></i>
+                    <div className="d-flex">
+                      <div className="p-2">
+                        <i className="fas fa-rocket fa-2x"></i>
                       </div>
-                      <div class="p-2">
+                      <div className="p-2">
                         Business optimization
                       </div>
                     </div>
 
-                    <div class="d-flex">
-                      <div class="p-2">
-                        <i class="fas fa-rocket fa-2x"></i>
+                    <div className="d-flex">
+                      <div className="p-2">
+                        <i className="fas fa-rocket fa-2x"></i>
                       </div>
-                      <div class="p-2">
-                        Task Aumomation
+                      <div className="p-2">
+                        Task Automation
                       </div>
                     </div>
                 </div>
-                <div className="col-lg-6 col-sm-12 text-center">
-                  <img style={rocket_img} src = {rocket} alt="rocket"/>
+                
+                <div className="col-lg-6 col-sm-6 text-center">
+                  <div className="rocket_img_class">
+                    <img src = {rocket} alt="rocket" height={300}/>
+                  </div>
                 </div>
             </div>
             </div>

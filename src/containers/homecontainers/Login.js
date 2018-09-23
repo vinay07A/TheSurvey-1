@@ -6,10 +6,10 @@ const Login = ({routeChange}) => {
 		<div>
 		  <div> 
 	        <nav className="navbar navbar-expand-lg navbar-navy bg-navy text-white d-flex justify-content-between">
-	          <a className="navbar-brand ml-5" onClick = {()=>routeChange('homepage')}>Survey<span className='text-green'>Rocket</span>  <i className="fas fa-rocket text-green"></i></a>
-	          <div className="collapse navbar-collapse login-register-button" id="navbarText">
-	            <span className="navbar-text mr-5">
-	              <button className="btn btn-outline-green" type="button" onClick={()=>routeChange("signup")}>Sign up</button>
+	          <a className="navbar-brand" onClick = {()=>routeChange('homepage')}>Survey<span className='text-green'>Rocket</span>  <i className="fas fa-rocket text-green"></i></a>
+	          	<div className="nav_div_custom">
+	            <span className="navbar-text">
+	              <button className="nav_custom btn btn-outline-green" type="button" onClick={()=>routeChange("signup")}>Sign up</button>
 	            </span>
 	          </div>
 	        </nav>
@@ -35,16 +35,19 @@ const Login = ({routeChange}) => {
 				  <div className="form-group mb-1">
 				    <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
 				  </div>
-					<div class="custom-control custom-checkbox mb-3">
-					  <input type="checkbox" class="custom-control-input mb-1" id="customCheck1" />
-					  <label class="custom-control-label " for="customCheck1">Remember me</label>
+					<div className="custom-control custom-checkbox mb-3">
+					  <input type="checkbox" className="custom-control-input mb-1" id="customCheck1" />
+					  <label className="custom-control-label " for="customCheck1">Remember me</label>
 					</div>
 				  <button type="submit" className="btn btn-navy btn-block">Submit</button>
 				</form>
 
+				<a className="reset" onClick={()=>routeChange("reset")}>Forgot your password?</a>
+
   			  </div>
+
 			</div>
-		
+			
 			
 		  </div>
 		</div>
